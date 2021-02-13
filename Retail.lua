@@ -87,6 +87,7 @@ addon.Spells = {
     [48707] = { type = IMMUNITY_SPELL }, -- Anti-Magic Shell
     [48265] = { type = BUFF_DEFENSIVE }, -- Death's Advance
     [48792] = { type = BUFF_DEFENSIVE }, -- Icebound Fortitude
+	[49039] = { type = BUFF_OTHER }, -- Lichborne
     [81256] = { type = BUFF_DEFENSIVE }, -- Dancing Rune Weapon
     [51271] = { type = BUFF_OFFENSIVE }, -- Pillar of Frost
     [55233] = { type = BUFF_DEFENSIVE }, -- Vampiric Blood
@@ -111,7 +112,8 @@ addon.Spells = {
     [212552] = { type = BUFF_DEFENSIVE }, -- Wraith Walk
     [219809] = { type = BUFF_DEFENSIVE }, -- Tombstone
     [223929] = { type = BUFF_OTHER }, -- Necrotic Wound
-
+	[334693] = { type = CROWD_CONTROL }, -- Absolute Zero
+    
     -- Demon Hunter
 
     [179057] = { type = CROWD_CONTROL }, -- Chaos Nova
@@ -237,7 +239,7 @@ addon.Spells = {
     [82691] = { type = CROWD_CONTROL }, -- Ring of Frost
     [108839] = { type = BUFF_OFFENSIVE }, -- Ice Floes
     [342246] = { type = BUFF_DEFENSIVE }, --Alter Time (Arcane)
-        [110909] = { type = BUFF_DEFENSIVE, parent = 108978 }, --Alter Time (Fire/Frost)
+        [110909] = { type = BUFF_DEFENSIVE, parent = 342246 }, --Alter Time (Fire/Frost)
     [157997] = { type = ROOT }, -- Ice Nova
     [190319] = { type = BUFF_OFFENSIVE }, -- Combustion
     [198111] = { type = BUFF_DEFENSIVE }, -- Temporal Shield
@@ -260,7 +262,7 @@ addon.Spells = {
     [119381] = { type = CROWD_CONTROL }, -- Leg Sweep
     [122278] = { type = BUFF_DEFENSIVE }, -- Dampen Harm
     [122470] = { type = BUFF_DEFENSIVE }, -- Touch of Karma (Debuff)
-        [125174] = { type = BUFF_DEFENSIVE, parent = 125174 }, -- Touch of Karma (Buff)
+        [125174] = { type = BUFF_DEFENSIVE, parent = 122470 }, -- Touch of Karma (Buff)
     [122783] = { type = BUFF_DEFENSIVE }, -- Diffuse Magic
     [137639] = { type = BUFF_DEFENSIVE }, -- Storm, Earth, and Fire
     [198909] = { type = CROWD_CONTROL }, -- Song of Chi-Ji
@@ -357,6 +359,7 @@ addon.Spells = {
     [79140] = { type = BUFF_OFFENSIVE }, -- Vendetta
     [121471] = { type = BUFF_OFFENSIVE }, -- Shadow Blades
     [207736] = { type = BUFF_OFFENSIVE }, -- Shadowy Duel
+    [207777] = { type = CROWD_CONTROL }, -- Dismantle
     [212183] = { type = CROWD_CONTROL }, -- Smoke Bomb
 
     -- Shaman
@@ -427,7 +430,6 @@ addon.Spells = {
     [871] = { type = BUFF_DEFENSIVE }, -- Shield Wall
     [1719] = { type = BUFF_OFFENSIVE }, -- Recklessness
     [5246] = { type = CROWD_CONTROL }, -- Intimidating Shout
-    [3411] = { type = BUFF_DEFENSIVE }, -- Intervene
     [12975] = { type = BUFF_DEFENSIVE }, -- Last Stand
     [18499] = { type = BUFF_OTHER }, -- Berserker Rage
     [23920] = { type = IMMUNITY_SPELL }, -- Spell Reflection
@@ -439,6 +441,7 @@ addon.Spells = {
     [107574] = { type = BUFF_OFFENSIVE }, -- Avatar
     [118038] = { type = BUFF_DEFENSIVE }, -- Die by the Sword
     [132169] = { type = CROWD_CONTROL }, -- Storm Bolt
+    [147833] = { type = BUFF_DEFENSIVE }, -- Intervene
     [184364] = { type = BUFF_DEFENSIVE }, -- Enraged Regeneration
     [197690] = { type = BUFF_DEFENSIVE }, -- Defensive Stance
     [213871] = { type = BUFF_DEFENSIVE }, -- Bodyguard
