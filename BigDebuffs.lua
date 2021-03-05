@@ -12,7 +12,7 @@ if LibClassicDurations then LibClassicDurations:Register(addonName) end
 local defaults = {
     profile = {
         raidFrames = {
-            maxDebuffs = 1,
+            maxDebuffs = 2,
             anchor = "INNER",
             enabled = true,
             cooldownCount = true,

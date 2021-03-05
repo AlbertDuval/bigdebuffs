@@ -36,6 +36,7 @@ addon.WarningDebuffs = {
     233497, -- Unstable Affliction
     233498, -- Unstable Affliction
     233499, -- Unstable Affliction
+    342938, -- Unstable Affliction
     34914, -- Vampiric Touch
     323673, -- Mindgames
 }
@@ -47,7 +48,8 @@ addon.PriorityDebuffs = {
     233497, -- Unstable Affliction
     233498, -- Unstable Affliction
     233499, -- Unstable Affliction
-    34914, -- Vampiric Touch
+    -- 342938, -- Unstable Affliction
+    -- 34914, -- Vampiric Touch
     102355, -- Faerie Swarm
     117405, -- Binding Shot
     122470, -- Touch of Karma
@@ -113,7 +115,7 @@ addon.Spells = {
     [219809] = { type = BUFF_DEFENSIVE }, -- Tombstone
     [223929] = { type = BUFF_OTHER }, -- Necrotic Wound
 	[334693] = { type = CROWD_CONTROL }, -- Absolute Zero
-    
+
     -- Demon Hunter
 
     [179057] = { type = CROWD_CONTROL }, -- Chaos Nova
