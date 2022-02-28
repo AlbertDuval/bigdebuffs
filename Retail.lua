@@ -190,6 +190,7 @@ addon.Spells = {
     [323546] = { type = BUFF_OFFENSIVE }, -- Ravenous Frenzy (Venthyr Ability)
     [338142] = { type = BUFF_OFFENSIVE }, -- Lone Empowerment (Kyrian Ability)
     [327037] = { type = BUFF_DEFENSIVE }, -- Kindred Protection (Kyrian Ability)
+    [362486] = { type = IMMUNITY }, -- Keeper of the Grove
 
     -- Hunter
 
@@ -219,6 +220,7 @@ addon.Spells = {
     [209997] = { type = BUFF_DEFENSIVE }, -- Play Dead
     [212638] = { type = ROOT }, -- Tracker's Net
     [213691] = { type = CROWD_CONTROL }, -- Scatter Shot
+    [357021] = { type = CROWD_CONTROL }, -- Consecutive Concussion
     [260402] = { type = BUFF_OFFENSIVE }, -- Double Tap
     [266779] = { type = BUFF_OFFENSIVE }, -- Coordinated Assault
     [288613] = { type = BUFF_OFFENSIVE }, -- Trueshot
@@ -304,6 +306,7 @@ addon.Spells = {
     [202248] = { type = IMMUNITY_SPELL }, -- Guided Meditation (Brew PvP Talent)
     [213664] = { type = BUFF_DEFENSIVE }, -- Nimble Brew (Brew PvP Talent)
     [132578] = { type = BUFF_DEFENSIVE }, -- Invoke Niuzao, the Black Ox
+    [344021] = { type = DEBUFF_OFFENSIVE }, -- Keefer's Skyreach
 
     -- Paladin
 
@@ -605,6 +608,7 @@ addon.Spells = {
     [332505] = { type = BUFF_OTHER }, -- Soulsteel Clamps (Kyrian - Mikanikos Trait)
         [332506] = { type = BUFF_OTHER, parent = 332505 }, -- Soulsteel Clamps (Kyrian - Mikanikos Trait) - when moving
     [332423] = { type = CROWD_CONTROL }, -- Sparkling Driftglobe Core (Kyrian - Mikanikos Trait)
+    [354051] = { type = ROOT }, -- Nimble Steps
 
     -- Trinkets
     [356567] = { type = CROWD_CONTROL }, -- Shackles of Malediction
