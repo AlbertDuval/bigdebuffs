@@ -253,7 +253,7 @@ addon.Spells = {
     [12042] = { type = BUFF_OFFENSIVE }, -- Arcane Power
     [12051] = { type = BUFF_OFFENSIVE }, -- Evocation
     [12472] = { type = BUFF_OFFENSIVE }, -- Icy Veins
-        [198144] = { type = BUFF_OFFENSIVE, parent = 12472 }, -- Ice Form
+        [198144] = { type = BUFF_OFFENSIVE }, -- Ice Form
     [31661] = { type = CROWD_CONTROL }, -- Dragon's Breath
     [45438] = { type = IMMUNITY }, -- Ice Block
     [41425] = { type = BUFF_OTHER }, -- Hypothermia
@@ -307,6 +307,7 @@ addon.Spells = {
     [213664] = { type = BUFF_DEFENSIVE }, -- Nimble Brew (Brew PvP Talent)
     [132578] = { type = BUFF_DEFENSIVE }, -- Invoke Niuzao, the Black Ox
     [344021] = { type = DEBUFF_OFFENSIVE }, -- Keefer's Skyreach
+    [353319] = { type = IMMUNITY_SPELL }, -- Peaceweaver
 
     -- Paladin
 
@@ -359,7 +360,7 @@ addon.Spells = {
     -- Priest
 
     [337661] = { type = BUFF_DEFENSIVE }, -- Translucent Image (Fade defensive Conduit)
-    [213602] = { type = BUFF_DEFENSIVE }, -- Greater Fade (Holy/Shadow PvP Talent)
+    [213602] = { type = IMMUNITY }, -- Greater Fade (Holy/Shadow PvP Talent)
     [605] = { type = CROWD_CONTROL, priority = true }, -- Mind Control
     [8122] = { type = CROWD_CONTROL }, -- Psychic Scream
     [9484] = { type = CROWD_CONTROL }, -- Shackle Undead
@@ -379,6 +380,7 @@ addon.Spells = {
     [197862] = { type = BUFF_DEFENSIVE }, -- Archangel (Disc PvP Talent)
     [197871] = { type = BUFF_OFFENSIVE }, -- Dark Archangel (Disc PvP Talent) - on the priest
         [197874] = { type = BUFF_OFFENSIVE, parent = 197871 }, -- Dark Archangel (Disc PvP Talent) - on others
+    [199890] = { type = ROOT }, -- Curse of Tongues
     [200183] = { type = BUFF_DEFENSIVE }, -- Apotheosis
     [200196] = { type = CROWD_CONTROL }, -- Holy Word: Chastise
         [200200] = { type = CROWD_CONTROL, parent = 200196 }, -- Holy Word: Chastise (Stun)
@@ -387,7 +389,8 @@ addon.Spells = {
     [213610] = { type = BUFF_DEFENSIVE }, -- Holy Ward
     --[27827] = { type = BUFF_DEFENSIVE }, -- Spirit of Redemption
     [215769] = { type = BUFF_DEFENSIVE }, -- Spirit of Redemption (Spirit of the Redeemer Holy PvP Talent)
-    [211336] = { type = BUFF_DEFENSIVE }, -- Archbishop Benedictus' Restitution (Holy Priest Revive Legendary)
+    [211336] = { type = BUFF_DEFENSIVE }, -- Archbishop Benedictus' Restitution (Resurrection Buff)
+    [211319] = { type = BUFF_DEFENSIVE }, -- Archbishop Benedictus' Restitution (Debuff)
     [289655] = { type = BUFF_DEFENSIVE }, -- Holy Word: Concentration
     [319952] = { type = BUFF_OFFENSIVE }, -- Surrender to Madness
     [322431] = { type = BUFF_OFFENSIVE, nounitFrames = true, nonameplates = true }, -- Thoughtsteal (Buff)
@@ -448,6 +451,7 @@ addon.Spells = {
     [340094] = { type = BUFF_OFFENSIVE }, -- Master Assassin's Mark (Legendary)
     [345569] = { type = BUFF_OFFENSIVE }, -- Flagellation (Venthyr Ability)
     [347037] = { type = BUFF_OFFENSIVE }, -- Sepsis (Night Fae Ability)
+    [328305] = { type = DEBUFF_OFFENSIVE, priority = true}, -- Sepsis (Night Fae Ability)
 
     -- Shaman
 
@@ -498,7 +502,7 @@ addon.Spells = {
     [338036] = { type = BUFF_SPEED_BOOST }, -- Thunderous Paws (Conduit)
     [327164] = { type = BUFF_OFFENSIVE }, -- Primordial Wave (Necrolord Ability)
     [207495] = { type = BUFF_DEFENSIVE }, -- Ancestral Protection (Totem)
-    	[207498] = { type = BUFF_DEFENSIVE, parent = 207495 }, -- Ancestral Protection (Player)
+        [207498] = { type = BUFF_DEFENSIVE, parent = 207495 }, -- Ancestral Protection (Player)
 
     -- Warlock
 
@@ -613,6 +617,8 @@ addon.Spells = {
     -- Trinkets
     [356567] = { type = CROWD_CONTROL }, -- Shackles of Malediction
     [358259] = { type = CROWD_CONTROL }, -- Gladiator's Maledict
+    [362699] = { type = IMMUNITY_SPELL }, -- Gladiator's Resolve
+    [363522] = { type = BUFF_DEFENSIVE }, -- Gladiator's Eternal Aegis
 
     -- Legacy (may be deprecated)
 
