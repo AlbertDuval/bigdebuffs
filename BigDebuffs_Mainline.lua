@@ -71,6 +71,7 @@ addon.Spells = {
     [212619] = { type = INTERRUPT, duration = 6 }, -- Call Felhunter (Warlock)
     [31935] = { type = INTERRUPT, duration = 3 }, -- Avenger's Shield (Paladin)
     [217824] = { type = INTERRUPT, duration = 4 }, -- Shield of Virtue (Protection PvP Talent)
+    [351338] = { type = INTERRUPT, duration = 4 }, -- Quell (Evoker)
 
     -- Death Knight
 
@@ -423,6 +424,8 @@ addon.Spells = {
     [65081] = { type = BUFF_SPEED_BOOST }, -- Body and Soul
     [121557] = { type = BUFF_SPEED_BOOST }, -- Angelic Feather
     [199845] = { type = DEBUFF_OFFENSIVE, nounitFrames = true, nonameplates = true }, -- Psyflay (Psyfiend) debuff
+    [358861] = { type = CROWD_CONTROL }, -- Void Volley: Horrify (Shadow PvP Talent)
+    [114415] = { type = ROOT }, -- Void Tendrils
 
     -- Rogue
 
@@ -589,6 +592,15 @@ addon.Spells = {
     [324143] = { type = BUFF_OFFENSIVE }, -- Conqueror's Banner (Necrolord Ability) - on the warrior
         [325862] = { type = BUFF_OFFENSIVE, parent = 324143 }, -- Conqueror's Banner (Necrolord Ability) - on others
 
+    -- Evoker
+
+    [360806] = { type = CROWD_CONTROL }, -- Sleep Walk
+    [355689] = { type = ROOT }, -- Landslide
+    [375087] = { type = BUFF_OFFENSIVE }, -- Dragonrage
+    [378464] = { type = IMMUNITY_SPELL }, -- Nullifying Shroud
+    [363916] = { type = BUFF_DEFENSIVE }, -- Obsidian Scales
+
+
     -- Other
 
     [115804] = { type = DEBUFF_OFFENSIVE, nounitFrames = true, nonameplates = true }, -- Mortal Wounds
@@ -609,6 +621,11 @@ addon.Spells = {
     [65116] = { type = BUFF_DEFENSIVE }, -- Stoneform
     [273104] = { type = BUFF_DEFENSIVE }, -- Fireblood
     [58984] = { type = BUFF_DEFENSIVE }, -- Shadowmeld
+
+    -- Dragonflight: Dragonriding
+
+    [388673] = { type = CROWD_CONTROL }, -- Dragonrider's Initiative
+    [388380] = { type = BUFF_SPEED_BOOST }, -- Dragonrider's Compassion
 
     -- Shadowlands: Covenant/Soulbind
 
