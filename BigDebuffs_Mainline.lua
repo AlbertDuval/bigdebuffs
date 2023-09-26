@@ -11,6 +11,15 @@ local ROOT = "roots"
 local IMMUNITY = "immunities"
 local IMMUNITY_SPELL = "immunities_spells"
 
+addon.HiddenDebuffs = {
+    80354, -- Temporal Displacement
+    371070, -- Rotting From Within
+    390435, -- Exhaustion
+    57723, -- Exhaustion
+    206151, -- Challenger's Burden
+    264689, -- Fatigued
+}
+
 addon.Units = {
     "player",
     "pet",
@@ -681,5 +690,9 @@ addon.Spells = {
 
     -- Special
     --[6788] = { type = "special", nounitFrames = true, noraidFrames = true }, -- Weakened Soul
+
+    -- Dragonflight Dungeons - Season 2
+    [266107] = { type = DEBUFF_OFFENSIVE }, -- Thirst for Blood
+    [368091] = { type = DEBUFF_OFFENSIVE }, -- Infected Bite
 
 }
