@@ -337,6 +337,22 @@ else
             Curse = function() return IsUsableSpell(GetSpellInfo(374251)) end,
         },
     }
+    if WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC then
+        classDispel.DRUID = {
+            Magic = function() return IsPlayerSpell(88423) end,
+            Curse = true,
+            Poison = true,
+        }
+        classDispel.SHAMAN = {
+            Magic = function() return IsPlayerSpell(77130) end,
+            Curse = true,
+        }
+        classDispel.PALADIN = {
+            Magic = function() return IsPlayerSpell(53551) end,
+            Poison = true,
+            Disease = true,
+        }
+    end
     local _, class = UnitClass("player")
     BigDebuffs.dispelTypes = classDispel[class]
 end
@@ -381,6 +397,7 @@ local GetAnchor = {
                     end
                 end
             end
+            return
         end
 
         if unit and (unit:match("arena") or unit:match("arena")) then
@@ -1328,7 +1345,8 @@ function BigDebuffs:AddBigDebuffs(frame)
 
         big.cooldown:SetHideCountdownNumbers(not self.db.profile.raidFrames.cooldownCount)
         big.cooldown.noCooldownCount = not self.db.profile.raidFrames.cooldownCount
-
+        big.cooldown:GetRegions():SetFont(LibSharedMedia:Fetch("font", BigDebuffs.db.profile.raidFrames.cooldownFont),
+            BigDebuffs.db.profile.raidFrames.cooldownFontSize, BigDebuffs.db.profile.raidFrames.cooldownFontEffect);
         big.cooldown:SetDrawEdge(false)
         frame.BigDebuffs[i] = big
         big:Hide()
@@ -1385,12 +1403,13 @@ function BigDebuffs:IsDispellable(unit, dispelType)
         if type(self.dispelTypes[dispelType]) == "function" then return self.dispelTypes[dispelType]() end
 
         -- dwarves can use Stoneform to remove diseases and poisons
-        if (not self.dispelTypes[dispelType]) and
-            unit == "player" and
-            (dispelType == "Poison" or dispelType == "Disease")
-        then
-            return IsUsableSpell("Stoneform")
-        end
+        -- todo: make this optional
+        -- if (not self.dispelTypes[dispelType]) and
+        --     unit == "player" and
+        --     (dispelType == "Poison" or dispelType == "Disease")
+        -- then
+        --     return IsUsableSpell("Stoneform")
+        -- end
 
         return self.dispelTypes[dispelType]
     else
@@ -1994,7 +2013,7 @@ else
                         break
                     end
                 end
-                tinsert(debuffs, { warning, size, 0, 0, true })
+                tinsert(debuffs, { warning, size, 0, 0, warningId })
             else
                 warning = nil
             end
@@ -2407,6 +2426,10 @@ end
 SLASH_BigDebuffs1 = "/bd"
 SLASH_BigDebuffs2 = "/bigdebuffs"
 SlashCmdList.BigDebuffs = function(msg)
-    InterfaceOptionsFrame_OpenToCategory(addonName)
-    InterfaceOptionsFrame_OpenToCategory(addonName)
+    if Settings and Settings.OpenToCategory then
+        Settings.OpenToCategory(addonName)
+    else
+        InterfaceOptionsFrame_OpenToCategory(addonName)
+        InterfaceOptionsFrame_OpenToCategory(addonName)
+    end
 end
