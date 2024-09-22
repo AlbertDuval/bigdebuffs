@@ -89,6 +89,7 @@ addon.Spells = {
     [374776] = { type = CROWD_CONTROL }, -- Tightening Grasp (Silence)
     [48707] = { type = IMMUNITY_SPELL }, -- Anti-Magic Shell
 	[410358] = { type = IMMUNITY_SPELL, parent = 48707 }, -- Anti-Magic Shell (Spellwarden)
+	[444741] = { type = IMMUNITY_SPELL, parent = 48707 }, -- Anti-Magic Shell (Horsemen's Aid)
     [145629] = { type = BUFF_DEFENSIVE }, -- Anti-Magic Zone
     [454863] = { type = BUFF_DEFENSIVE }, -- Lesser Anti-Magic Shell
     [48265] = { type = BUFF_SPEED_BOOST }, -- Death's Advance
@@ -227,8 +228,10 @@ addon.Spells = {
     [378464] = { type = IMMUNITY }, -- Nullifying Shroud
     [378441] = { type = IMMUNITY }, -- Time Stop
     [357210] = { type = IMMUNITY, nonameplates = true }, -- Deep Breath (Immune to CC)
+	[433874] = { type = IMMUNITY, nonameplates = true, parent = 357210 }, -- (Maneuverability)
     [359816] = { type = IMMUNITY, nonameplates = true }, -- Dream Flight (Immune to CC)
     [403631] = { type = IMMUNITY, nonameplates = true }, -- Breath of Eons (Immune to CC)
+	[442204] = { type = IMMUNITY, nonameplates = true, parent = 403631 }, -- (Maneuverability)
     [445134] = { type = DEBUFF_OFFENSIVE }, -- Shape of Flame
     [358267] = { type = BUFF_SPEED_BOOST }, -- Hover
 
@@ -298,6 +301,7 @@ addon.Spells = {
     [383121] = { type = CROWD_CONTROL }, -- Mass Polymorph
     [122] = { type = ROOT }, -- Frost Nova
     [33395] = { type = ROOT }, -- Freeze
+    [449700] = { type = ROOT }, -- Gravity Lapse (Wowhead labels it as a root mechanic)
     [365362] = { type = BUFF_OFFENSIVE }, -- Arcane Surge
     [12051] = { type = BUFF_OFFENSIVE }, -- Evocation
     [12472] = { type = BUFF_OFFENSIVE }, -- Icy Veins
